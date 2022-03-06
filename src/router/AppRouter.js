@@ -3,6 +3,7 @@ import Quantri from '../layouts/Quantri';
 import Login from '../pages/auth/login/Login';
 import Register from '../pages/auth/register/Register';
 import Dashboard from '../pages/quantri/Dashboard';
+import Product from '../pages/quantri/Product';
 
 const AppRouter = () => {
   return (
@@ -12,6 +13,7 @@ const AppRouter = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/quantri" element={<Quantri />}>
           <Route index element={<Dashboard />} />
+          <Route path="products" element={<Product />} />
         </Route>
       </Routes>
     </BrowserRouter>

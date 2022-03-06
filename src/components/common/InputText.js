@@ -15,8 +15,8 @@ const InputText = (props) => {
         <TextField
           label={label}
           type={type}
-          error={!!errors.email}
-          helperText={errors.email?.message}
+          error={!!errors[`${name}`]}
+          helperText={errors[`${name}`]?.message}
           variant="outlined"
           fullWidth
           {...field}

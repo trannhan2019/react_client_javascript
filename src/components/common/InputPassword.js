@@ -31,7 +31,7 @@ const InputPassword = (props) => {
     <FormControl
       variant="outlined"
       fullWidth
-      error={!!errors.password}
+      error={!!errors[`${name}`]}
     >
       <InputLabel>{label}</InputLabel>
       <Controller
@@ -55,7 +55,7 @@ const InputPassword = (props) => {
           />
         )}
       />
-      <FormHelperText>{errors.password?.message}</FormHelperText>
+      <FormHelperText>{errors[`${name}`]?.message}</FormHelperText>
     </FormControl>
   );
 };

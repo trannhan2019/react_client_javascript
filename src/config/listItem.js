@@ -13,18 +13,18 @@ import { Link } from 'react-router-dom';
 
 export const mainListItems = (
   <React.Fragment>
-    <ListItemButton component={Link} to="dashboard" selected>
+    <ListItemButton component={Link} to="dashboard">
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
       <ListItemText primary="Dashboard" />
     </ListItemButton>
 
-    <ListItemButton component={Link} to="tutorials">
+    <ListItemButton component={Link} to="products">
       <ListItemIcon>
         <ShoppingCartIcon />
       </ListItemIcon>
-      <ListItemText primary="Tutorial" />
+      <ListItemText primary="Products" />
     </ListItemButton>
 
     <ListItemButton component={Link} to="validate">
